@@ -471,25 +471,23 @@
           </ul>
         </div>
         <div class="footer-subs">
-          <div class="container-input">
-            <p class="text-subs">Subscribe</p>
-            <form class="form-footer">
-              <label class="label-form" for="form-email"
-                ><input
-                  class="form-input"
-                  name="form-email"
-                  id="form-email"
-                  type="email"
-                  placeholder="E-mail"
-              /></label>
-            </form>
-          </div>
-          <div class="container-form-btn">
-            <button type="submit" class="form-btn">Subscribe</button>
-            <svg class="svg-form" width="24" height="24">
-              <use href="./images/icons.svg#icon-Frame-3"></use>
-            </svg>
-          </div>
+          <p class="text-subs">Subscribe</p>
+          <form class="form-footer">
+            <label class="label-form" for="form-email"
+              ><input
+                class="form-input"
+                name="form-email"
+                id="form-email"
+                type="email"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="form-btn">
+              Subscribe
+              <svg class="svg-form" width="24" height="24">
+                <use href="./images/icons.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
@@ -497,79 +495,79 @@
     <!-- MODAL FORM -->
     <div class="modal-container">
       <div class="modal-contacts-container">
-        <div class="close-btn">
+        <button type="button" class="close-btn">
           <svg class="svg-modal-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
           </svg>
-        </div>
+        </button>
         <p class="subtittle-modal">
           Leave your contacts and we will call you back
         </p>
         <form class="form-modal">
-          <div modal-input-container>
-            <label for="user-name">
-              Name
-              <div class="input-container-svg">
-                <input type="text" id="user-name" class="user-name" name="" />
-                <svg class="svg-modal" width="18" height="24">
-                  <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-                </svg>
-              </div>
-            </label>
+          <div class="form-container">
+            <label class="label-backdrop" for="user-name">Name</label>
+            <div class="input-container-svg">
+              <input
+                type="text"
+                id="user-name"
+                class="user-input"
+                name="user-name"
+              />
+              <svg class="svg-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
-          <div modal-input-container>
-            <label for="user-phone">
-              Phone
-              <div class="input-container-svg">
-                <input
-                  type="tel"
-                  id="user-phone"
-                  class="user-phone"
-                  name="tel"
-                />
-                <svg class="svg-modal" width="18" height="24">
-                  <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-                </svg>
-              </div>
-            </label>
+          <div class="form-container">
+            <label class="label-backdrop" for="user-phone">Phone</label>
+            <div class="input-container-svg">
+              <input
+                type="tel"
+                id="user-phone"
+                class="user-input"
+                name="user-phone"
+              />
+              <svg class="svg-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
-          <div modal-input-container>
-            <label for="user-email">
-              Email
-              <div class="input-container-svg">
-                <input
-                  type="email"
-                  id="user-email"
-                  class="user-email"
-                  name="user-email"
-                />
-                <svg class="svg-modal" width="18" height="24">
-                  <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-                </svg>
-              </div>
-            </label>
+          <div class="form-container">
+            <label class="label-backdrop" for="user-email">Email</label>
+            <div class="input-container-svg">
+              <input
+                type="email"
+                id="user-email"
+                class="user-input"
+                name="user-email"
+              />
+              <svg class="svg-modal" width="18" height="24">
+                <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+              </svg>
+            </div>
           </div>
-          <label for="user-comment">
-            Comment
+          <div class="form-container-area">
+            <label class="label-backdrop" for="user-comment">Comment</label>
             <textarea
               name="comment"
               id="user-comment"
               cols="30"
               rows="10"
               placeholder="Text input"
+              class="comment-input"
             ></textarea>
-          </label>
-          <div>
+          </div>
+          <div class="checkbox-box">
             <input
               type="checkbox"
-              id="policy"
-              name="policy"
+              id="user-privacy"
+              name="user-privacy"
               value="true"
-              class="check-input"
+              class="check-input visually-hidden"
             />
-            <label for="policy" class="check-text">
+            <label for="user-privacy" class="check-text">
               <span class="check-icon"
-                ><svg class="svg-modal" width="24" height="24">
+                ><svg class="svg-true" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector1"></use>
                 </svg>
               </span>
